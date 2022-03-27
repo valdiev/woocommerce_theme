@@ -1,0 +1,112 @@
+header {
+    nav {
+        background-color: $light-brown;
+        height: 8rem;
+        .nav {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            position: relative;
+
+            div ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: $black;
+                        text-transform: uppercase;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            &__logo {
+                flex: 2;
+                height: inherit;
+                text-align: center;
+
+                a img {
+                    height: 100%;
+                }
+            }
+
+            &__links {
+                flex: 1;
+
+                ul {
+                    gap: 1.5rem;
+                }
+            }
+
+            &__woocommerce {
+                flex: 1;
+
+                ul {
+                    width: fit-content;
+                    margin: 0 0 0 auto;
+                    background-color: #fff;
+                    padding: 1.5rem 2rem;
+                    border-radius: 1.5rem;
+
+                    li {
+                        &:first-child {
+                            padding-right: 1rem;
+                        }
+                        &:nth-child(2) {
+                            border-left: 1px solid $black;
+                            border-right: 1px solid $black;
+                            padding: 0 1rem;
+                        }
+                        &:last-child {
+                            padding-left: 1rem;
+                        }
+                        a {
+                            i {
+                                color: black;
+                                &::before {
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .dashed-separator {
+            position: relative;
+            height: 1.5px;
+            background-image: linear-gradient(to right, $grey 0%, $grey 50%, transparent 50%);
+            background-size: 10px 1.5px;
+            background-repeat: repeat-x;
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                display: inline-block;
+                height: 0;
+                width: 0;
+                border-right: 5px solid transparent;
+                border-bottom: 10px solid $grey;
+                border-left: 5px solid transparent;
+            }
+
+            &::before {
+                left: 0;
+                transform: rotate(90deg);
+            }
+
+            &::after {
+                right: 0;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+header nav {
+  background-color: #F4EAD8;
+  height: 8rem;
+}
+header nav .nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+}
+header nav .nav div ul {
+  display: flex;
+  align-items: center;
+}
+header nav .nav div ul li {
+  list-style: none;
+}
+header nav .nav div ul li a {
+  text-decoration: none;
+  color: #140901;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+header nav .nav__logo {
+  flex: 2;
+  height: inherit;
+  text-align: center;
+}
+header nav .nav__logo a img {
+  height: 100%;
+}
+header nav .nav__links {
+  flex: 1;
+}
+header nav .nav__links ul {
+  gap: 1.5rem;
+}
+header nav .nav__woocommerce {
+  flex: 1;
+}
+header nav .nav__woocommerce ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 0 0 auto;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+}
+header nav .nav__woocommerce ul li:first-child {
+  padding-right: 1rem;
+}
+header nav .nav__woocommerce ul li:nth-child(2) {
+  border-left: 1px solid #140901;
+  border-right: 1px solid #140901;
+  padding: 0 1rem;
+}
+header nav .nav__woocommerce ul li:last-child {
+  padding-left: 1rem;
+}
+header nav .nav__woocommerce ul li a i {
+  color: black;
+}
+header nav .nav__woocommerce ul li a i::before {
+  font-size: 2rem;
+}
+header nav .dashed-separator {
+  position: relative;
+  height: 1.5px;
+  background-image: linear-gradient(to right, #D2C3B3 0%, #D2C3B3 50%, transparent 50%);
+  background-size: 10px 1.5px;
+  background-repeat: repeat-x;
+}
+header nav .dashed-separator::before, header nav .dashed-separator::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #D2C3B3;
+  border-left: 5px solid transparent;
+}
+header nav .dashed-separator::before {
+  left: 0;
+  transform: rotate(90deg);
+}
+header nav .dashed-separator::after {
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+body.home main {
+  height: calc(100vh - 8rem);
+  background-color: #F4EAD8;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FFF9EB;
+}
+
+h1 {
+  color: #140901;
+}
+
+.container {
+  width: 80%;
+  margin-inline: auto;
+}

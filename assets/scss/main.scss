@@ -1,0 +1,22 @@
+@import "./_reset";
+@import "./_variables";
+@import "./nav";
+@import "./home";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $cream;
+}
+
+
+h1 {
+    color: $black;
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
